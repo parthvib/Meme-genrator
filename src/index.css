@@ -1,13 +1,117 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.logo {
+    width: 16rem;
+    height: 3rem;
+    flex-shrink: 0;   
+    display: flex;
+    /* border: 2px solid red; */
+    
+}
+p{
+    margin-left: 0.5rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color: white;
+    border: #A626D3;
+    box-shadow: 0,0,0,0.2;
+}
+.memeImg{
+    width: 4rem;
+    height: 4rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+
+}
+header{
+    width: 100%;
+    height: 20%;
+   background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.form {
+    display: grid;
+    grid-template: 40px 40px / 0.5fr 0.5fr;
+    gap: 17px;
 }
+
+.form-input {
+    font-family: "Karla", sans-serif;
+    border-radius: 5px;
+    border: 1px solid #D5D4D8;
+    width: 15rem;
+    margin-left: 2rem;
+
+
+}
+.inp1{
+    
+    margin-left: -1rem;
+    margin-right: -5rem;
+
+}
+main{
+    margin-top: 2rem;
+}
+
+.form-button {
+    grid-column: 1 / -1;
+    height: 3rem;
+    border-radius: 5px;
+    /* align-self: center; */
+    background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+    margin: auto;
+}
+
+.meme-image img{
+        max-width: 100%;
+        max-height: 100%;
+    
+}
+.meme {
+    position: relative;
+}
+
+.meme--image {
+    align-items: center;
+    max-width: 100%;
+    min-width: 100%;
+    border-radius: 3px;
+}
+
+.meme--text {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.top {
+    top: 0;
+}
+
